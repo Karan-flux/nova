@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: novariyan-site
+    runtime: node
+    plan: starter
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/content
+    disk:
+      name: novariyan-content
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data

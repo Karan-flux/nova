@@ -1,0 +1,19 @@
+{
+  "name": "novariyan-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Novariyan website with a small SQLite-backed content manager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
