@@ -479,6 +479,9 @@ app.delete('/api/admin/projects/:id', requireAdmin, (req, res) => {
   removeUploadedImage(existing.image_url);
   res.status(204).end();
 });
+app.get('/googlee0f1d2e46885df4c.html', (_req, res) => {
+  res.type('text/plain').send('google-site-verification: googlee0f1d2e46885df4c.html');
+});
 
 app.get(['/', '/index.html'], (_req, res) => res.sendFile(path.join(ROOT, 'index.html')));
 app.get('/privacy-policy.html', (_req, res) => res.sendFile(path.join(ROOT, 'privacy-policy.html')));
